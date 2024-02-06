@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Macondo&display=swap");
+* {
+  --ang: 0;
+}
+
+html, body {
+  height: 100%;
+  cursor: ew-resize;
+}
+
+body {
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Macondo", cursive;
+}
+
+p, h1 {
+  color: white;
+  position: absolute;
+  bottom: 10px;
+  font-size: 14px;
+}
+
+h1 {
+  top: 10px;
+  font-size: 20px;
+}
+
+.spinner {
+  transform-style: preserve-3d;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotateY(calc(var(--ang) * 1deg)) translateY(-12px);
+}
+
+.holder {
+  width: 600px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 700px;
+  perspective-origin: center;
+}
+
+.skel {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.skel:nth-child(1) {
+  transform: rotateY(0deg) translateZ(380px);
+  background-image: url("http://oastone.co.uk/fun/skeletons/Skeleton-1.png");
+}
+
+.skel:nth-child(2) {
+  transform: rotateY(15deg) translateZ(380px);
+  background-image: url("http://oastone.co.uk/fun/skeletons/Skeleton-2.png");
+}
+
+.skel:nth-child(3) {
+  transform: rotateY(30deg) translateZ(380px);
+  background-image: url("http://oastone.co.uk/fun/skeletons/Skeleton-3.png");
+}
+
+.skel:nth-child(4) {
+  transform: rotateY(45deg) translateZ(380px);
+  background-image: url("http://oastone.co.uk/fun/skeletons/Skeleton-4.png");
+}
+
+.skel:nth-child(5) {
+  transform: rotateY(60deg) translateZ(380px);
+  background-image: url("http://oastone.co.uk/fun/skeletons/Skeleton-5.png");
+}
+
+.skel:nth-child(6) {
+  transform: rotateY(75deg) translateZ(380px);
+  background-image: url("http://oastone.co.uk/fun/skeletons/Skeleton-6.png");
+}
+
+.skel:nth-child(7) {
+  transform: rotateY(90deg) translateZ(380px);
+  background-image: url("http://oastone.co.uk/fun/skeletons/Skeleton-7.png");
+}
+
+.skel:nth-child(8) {
+  transform: rotateY(105deg) translateZ(380px);
+  background-image: url("http://oastone.co.uk/fun/skeletons/Skeleton-8.png");
+}
+
+.skel:nth-child(9) {
+  transform: rotateY(120deg) translateZ(380px);
+  background-image: url("http://oastone.co.uk/fun/skeletons/Skeleton-9.png");
+}
+
+.skel:nth-child(10) {
+  transform: rotateY(135deg) translateZ(380px);
+  background-image: url("http://oastone.co.uk/fun/skeletons/Skeleton-10.png");
+}
+
+.skel:nth-child(11) {
+  transform: rotateY(150deg) translateZ(380px);
+  background-image: url("http://oastone.co.uk/fun/skeletons/Skeleton-11.png");
+}
+
+.skel:nth-child(12) {
+  transform: rotateY(165deg) translateZ(380px);
+  background-image: url("http://oastone.co.uk/fun/skeletons/Skeleton-12.png");
+}
+
+.skel:nth-child(13) {
+  transform: rotateY(180deg) translateZ(380px);
+  background-image: url("http://oastone.co.uk/fun/skeletons/Skeleton-1.png");
+}
+
+.skel:nth-child(14) {
+  transform: rotateY(195deg) translateZ(380px);
+  background-image: url("http://oastone.co.uk/fun/skeletons/Skeleton-2.png");
+}
+
+.skel:nth-child(15) {
+  transform: rotateY(210deg) translateZ(380px);
+  background-image: url("http://oastone.co.uk/fun/skeletons/Skeleton-3.png");
+}
+
+.skel:nth-child(16) {
+  transform: rotateY(225deg) translateZ(380px);
+  background-image: url("http://oastone.co.uk/fun/skeletons/Skeleton-4.png");
+}
+
+.skel:nth-child(17) {
+  transform: rotateY(240deg) translateZ(380px);
+  background-image: url("http://oastone.co.uk/fun/skeletons/Skeleton-5.png");
+}
+
+.skel:nth-child(18) {
+  transform: rotateY(255deg) translateZ(380px);
+  background-image: url("http://oastone.co.uk/fun/skeletons/Skeleton-6.png");
+}
+
+.skel:nth-child(19) {
+  transform: rotateY(270deg) translateZ(380px);
+  background-image: url("http://oastone.co.uk/fun/skeletons/Skeleton-7.png");
+}
+
+.skel:nth-child(20) {
+  transform: rotateY(285deg) translateZ(380px);
+  background-image: url("http://oastone.co.uk/fun/skeletons/Skeleton-8.png");
+}
+
+.skel:nth-child(21) {
+  transform: rotateY(300deg) translateZ(380px);
+  background-image: url("http://oastone.co.uk/fun/skeletons/Skeleton-9.png");
+}
+
+.skel:nth-child(22) {
+  transform: rotateY(315deg) translateZ(380px);
+  background-image: url("http://oastone.co.uk/fun/skeletons/Skeleton-10.png");
+}
+
+.skel:nth-child(23) {
+  transform: rotateY(330deg) translateZ(380px);
+  background-image: url("http://oastone.co.uk/fun/skeletons/Skeleton-11.png");
+}
+
+.skel:nth-child(24) {
+  transform: rotateY(345deg) translateZ(380px);
+  background-image: url("http://oastone.co.uk/fun/skeletons/Skeleton-12.png");
+}
+
+.skel:nth-child(25) {
+  transform: rotateY(360deg) translateZ(380px);
+  background-image: url("http://oastone.co.uk/fun/skeletons/Skeleton-1.png");
+}
+
+.fade {
+  background: #000;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.2) 0%, black 20%, black 80%, rgba(0, 0, 0, 0.2) 100%);
+  width: 840px;
+  height: 200px;
+  position: absolute;
+  transform: rotateY(calc(var(--ang) * -1deg)) translateZ(70px);
+}
+
+@keyframes spin {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}

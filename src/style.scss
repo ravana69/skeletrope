@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
+
+* {
+  --ang: 0;
+}
+
+html, body {
+  height: 100%;
+  cursor: ew-resize;
+}
+
+body {
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Macondo', cursive;
+}
+
+p, h1 {
+  color: white;
+  position: absolute;
+  bottom: 10px;
+  font-size: 14px;
+}
+h1 {
+  top: 10px;
+  font-size: 20px;
+}
+
+.spinner {
+  transform-style: preserve-3d;
+  //background: #fff3;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotateY(calc(var(--ang) * 1deg)) translateY(-12px);
+  //transition: all .5s ease-in-out;
+  //animation: spin 10s linear infinite;
+  //transform: rotateX(10deg) rotateY(-98deg);
+}
+
+.holder {
+  //background: #fff2;
+  width: 600px;
+  height: 200px;
+  display: flex;
+	justify-content: center;
+	align-items: center;
+  perspective: 700px;
+  perspective-origin: center;
+}
+
+.skel {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  background-size: cover;
+	background-position: 50% 50%;	
+  //box-shadow: 0 0 5px 3px #0006;
+  //opacity: 0.8;
+}
+
+@for $i from 0 through 24 {
+	.skel:nth-child(#{$i + 1}) {
+    transform: rotateY(#{$i * 15deg}) translateZ(380px);
+    background-image: url("http://oastone.co.uk/fun/skeletons/Skeleton-" + #{($i%12) + 1} + ".png");
+	}
+}
+
+.fade {
+  background: #000;
+  background: linear-gradient(90deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,1) 20%, rgba(0,0,0,1) 80%, rgba(0,0,0,0.2) 100%);
+  width: 840px;
+  height: 200px;
+  position: absolute;
+  transform: rotateY(calc(var(--ang) * -1deg)) translateZ(70px);
+  //transition: all .5s ease-in-out;  
+}
+
+@keyframes spin {
+  0%{
+    transform: rotateY(0deg);
+  }
+  50% {
+    //nothing here;
+  }
+  100%{
+    transform: rotateY(360deg);
+  }
+}
+
+// pics
+
